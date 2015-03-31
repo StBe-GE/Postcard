@@ -100,6 +100,15 @@
                                     <action selector="sendMailButtonPressed:" destination="HRu-iU-qux" eventType="touchUpInside" id="6un-nS-54t"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXJ-hB-M6f">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="401" width="278" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -110,6 +119,7 @@
                                 <exclude reference="IOs-MQ-dfW"/>
                                 <exclude reference="Exn-m9-W05"/>
                                 <exclude reference="OTw-MD-CkI"/>
+                                <exclude reference="wXJ-hB-M6f"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -120,6 +130,7 @@
                                 <include reference="IOs-MQ-dfW"/>
                                 <include reference="Exn-m9-W05"/>
                                 <include reference="OTw-MD-CkI"/>
+                                <include reference="wXJ-hB-M6f"/>
                             </mask>
                         </variation>
                     </view>
@@ -128,6 +139,7 @@
                         <outlet property="enterNameTextfield" destination="jao-lP-yPd" id="xPl-MX-XDZ"/>
                         <outlet property="mailButton" destination="OTw-MD-CkI" id="mzx-gm-3LY"/>
                         <outlet property="messageLabel" destination="Exn-m9-W05" id="YiW-pa-Xwe"/>
+                        <outlet property="nameLabel" destination="wXJ-hB-M6f" id="d3p-zp-hiP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbJ-OV-hlF" userLabel="First Responder" sceneMemberID="firstResponder"/>

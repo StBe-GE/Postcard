@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mailButton: UIButton!
     
+    // Challenge 1: connect nameLabel
+    @IBOutlet weak var nameLabel: UILabel!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -38,6 +41,13 @@ class ViewController: UIViewController {
         enterMessageTextfield.resignFirstResponder()
         
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
+        
+        // Challenge 1: added functions for nameLabel
+        nameLabel.hidden = false
+        nameLabel.text = enterNameTextfield.text
+        nameLabel.textColor = UIColor.blueColor()
+        enterNameTextfield.text = ""
+        
     
     }
 
